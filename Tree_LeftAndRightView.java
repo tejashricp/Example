@@ -1,5 +1,5 @@
 /*
-*Given a binary tree, print the left and right view of this binary tree.
+*Given a binary tree, print the left and right view of this binary tree using two tree traversals.
 * */
 
 public class Demo {
