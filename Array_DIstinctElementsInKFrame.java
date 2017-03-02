@@ -5,7 +5,8 @@
 
 
 import java.io.UnsupportedEncodingException;
-import java.util.HashSet;
+import java.util.Arrays;
+import java.util.HashMap;
 
 public class Demo {
     public static void main(String[] args) throws UnsupportedEncodingException {
@@ -15,21 +16,29 @@ public class Demo {
     }
 
     private static void countDistinctNumbers(int[] input, int k) {
-        HashSet hashSet = new HashSet();
-        for(int i = 0;i<input.length;i++){
-            for (int j = i; j - i < k && i+k<= input.length; j++) {
-
-                if (!hashSet.contains(input[j]))
-                    hashSet.add(input[j]);
+        HashMap out = new HashMap();
+        int i =0;
+        int j= i;
+        while(i+k<= input.length){
+            if(j-i>= k) {
+                printDistinctElements(out);
+                out.clear();
+                i++;
+                j = i;
             }
-            printDistinctElements(hashSet);
-            hashSet.clear();
+            else {
+                if (!out.containsValue(input[j]))
+                    out.put(j,input[j]);
+                j++;
+            }
         }
     }
 
-    private static void printDistinctElements(HashSet hashSet) {
-        for (Object o : hashSet) {
-            System.out.print(o + " ");
+    private static void printDistinctElements(HashMap hashSet) {
+        Object[] arr= hashSet.keySet().toArray();
+        Arrays.sort(arr);
+        for (Object o : arr) {
+            System.out.print(hashSet.get(o) + " ");
         }
         System.out.println();
     }
