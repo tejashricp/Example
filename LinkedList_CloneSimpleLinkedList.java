@@ -1,8 +1,8 @@
-
 /*
 * Clone a linked list
 *
-* * */
+* and reverse a linked list
+* */
 
 public class Demo {
     public static void main(String[] args) {
@@ -27,8 +27,37 @@ public class Demo {
         listNode5.next = listNode6;
 
         listNode6.next = null;
-        cloneLinkedList(linkedList.head,null);
+        linkedList = cloneLinkedList(linkedList.head,null);
+        printLinkedList(linkedList.head);
+        System.out.println();
+        linkedList = reverseLinkedList(linkedList.head,null);
+        printLinkedList(linkedList.head);
+    }
 
+    private static CustomLinkedList reverseLinkedList(CustomLinkedListNode node, CustomLinkedListNode prev) {
+        CustomLinkedList reverseLinkedList = new CustomLinkedList();
+        CustomLinkedListNode temp;
+        while(true){
+            if(node == null){
+               reverseLinkedList.head = prev;
+                break;
+            }
+            else {
+                temp = node.next;
+                node.next = prev;
+                prev = node;
+                node = temp;
+            }
+        }
+
+        return reverseLinkedList;
+    }
+
+    private static void printLinkedList(CustomLinkedListNode linkedListNode) {
+        while(linkedListNode !=null){
+            System.out.print(linkedListNode.data + "->");
+            linkedListNode = linkedListNode.next;
+        }
     }
 
     private static CustomLinkedList cloneLinkedList(CustomLinkedListNode node, CustomLinkedListNode prev) {
