@@ -34,6 +34,24 @@ public class Demo {
         }
     }
 
+    private static void countDistinctNumbers1(int[] input, int k) {
+        HashMap<Integer,Integer> out = new HashMap<Integer,Integer>();
+        for(int i=0;i<input.length;i++){
+            if(out.containsKey(input[i])){
+                int index = out.get(input[i]);
+                if (index<(i-k))
+                    System.out.print(input[i]+",");
+                else
+                    System.out.print(",");
+            }
+            else {
+                System.out.print(input[i]+",");
+            }
+            out.put(input[i], i);
+
+        }
+    }
+    
     private static void printDistinctElements(HashMap hashSet) {
         Object[] arr= hashSet.keySet().toArray();
         Arrays.sort(arr);
