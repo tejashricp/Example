@@ -7,7 +7,19 @@
 1) Find path from root to n1 and store it in a vector or array.
 2) Find path from root to n2 and store it in another vector or array.
 3) Traverse both paths till the values in arrays are same. Return the common element just before the mismatch.
-* */
+* 
+*Approach 2
+* The idea is to traverse the tree starting from root. If any of the given keys (n1 and n2) matches with root,
+* then root is LCA (assuming that both keys are present).
+* If root doesn’t match with any of the keys,
+* we recur for left and right subtree.
+* The node which has one key present in its left subtree
+* and the other key present in right subtree is the LCA.
+* If both keys lie in left subtree,
+* then left subtree has LCA also,
+* otherwise LCA lies in right subtree.
+
+*/
 
 
 import sun.reflect.generics.tree.Tree;
@@ -79,6 +91,20 @@ public class Demo {
     }
 
 //Approach1 End
+
+        //Approach 2 start
+    private static TreeNode findLowestCommonAncestor2(TreeNode root, TreeNode n1, TreeNode n2) {
+        if(root == null)
+            return null;
+        if(root == n1 || root == n2)
+            return root;
+        TreeNode leftLca = findLowestCommonAncestor2(root.left,n1,n2);
+        TreeNode rightLca = findLowestCommonAncestor2(root.right,n1,n2);
+        if(leftLca != null && rightLca != null)
+            return root;
+        return leftLca != null ? leftLca : rightLca ;
+    }
+    //Approach 2 end
 
     public static class TreeNode {
         int data;
