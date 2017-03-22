@@ -43,8 +43,56 @@ public class Demo {
         treeNodeQueueRead.clear();
         treeNodeQueueRead.add(root);
         rightViewTraverse(treeNodeQueueCopy,treeNodeQueueRead);
+        System.out.println("===================");
+        treeNodeQueueRead.clear();
+        treeNodeQueueRead.add(root);
+        rightViewTraverse(treeNodeQueueRead);
+        System.out.println("===================");
+        treeNodeQueueRead.clear();
+        treeNodeQueueRead.add(root);
+        leftViewTraverse(treeNodeQueueRead);
+
     }
 
+    
+    private static void leftViewTraverse(Queue<TreeNode> treeNodeQueueRead) {
+            if(treeNodeQueueRead.isEmpty())
+                return;
+            TreeNode root = treeNodeQueueRead.poll();
+            if(root.right != null) {
+                root.right.level = root.level+1;
+                treeNodeQueueRead.add(root.right);
+            }
+            if(root.left != null) {
+                root.left.level = root.level+1;
+                treeNodeQueueRead.add(root.left);
+            }
+            if(treeNodeQueueRead.isEmpty() || root.level != treeNodeQueueRead.peek().level) {
+                System.out.print(root.data+" ");
+                System.out.println();
+            }
+        leftViewTraverse(treeNodeQueueRead);
+    }
+
+    private static void rightViewTraverse(Queue<TreeNode> treeNodeQueueRead) {
+        if(treeNodeQueueRead.isEmpty())
+            return;
+        TreeNode root = treeNodeQueueRead.poll();
+        if(root.left != null) {
+            root.left.level = root.level+1;
+            treeNodeQueueRead.add(root.left);
+        }
+        if(root.right != null) {
+            root.right.level = root.level+1;
+            treeNodeQueueRead.add(root.right);
+        }
+        if(treeNodeQueueRead.isEmpty() || root.level != treeNodeQueueRead.peek().level) {
+            System.out.print(root.data+" ");
+            System.out.println();
+        }
+        rightViewTraverse(treeNodeQueueRead);
+    }
+    
     private static void leftViewTraverse(Queue<TreeNode> treeNodeQueueCopy, Queue<TreeNode> treeNodeQueueRead) {
             if(treeNodeQueueRead.isEmpty()) 
                 return;
