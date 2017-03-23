@@ -20,41 +20,36 @@ import java.util.*;
 public class Demo {
     public static void main(String[] args) {
         int[] arr1 = {10, 3, 5, 6, 20};
-        System.out.println(getMaxSumForTriplet(arr1));
+        System.out.println(getMaxProductForTriplet1(arr1));
         int[] arr2 =   {-10, -3, -5, -6, -20};
-        System.out.println(getMaxSumForTriplet(arr2));
+        System.out.println(getMaxProductForTriplet1(arr2));
         int[] arr3 =   {1, -4, 3, -6, 7};
-        System.out.println(getMaxSumForTriplet(arr3));
+        System.out.println(getMaxProductForTriplet1(arr3));
     }
+//works for all negative n positive inputs
+        private static int getMaxProductForTriplet1(int[] arr1) {
+        int max[] = new int[3];
+        int min[] = new int[3];
 
-    /*private static int getMaxSumForTriplet(int[] arr1) {
-        int max1 = Integer.MIN_VALUE;
-        int max2 = Integer.MIN_VALUE;
-        int max3 = Integer.MIN_VALUE;
+        Queue<Integer> maxHeap = new PriorityQueue<Integer>(3, Collections.reverseOrder());
+        Queue<Integer> minHeap = new PriorityQueue<>(3);
 
-        for(int i = 0;i<arr1.length;i++) {
-            if (max1 * max2 * max3 < arr1[i] * max2 * max3) {
-                max1 = arr1[i];
-                if (max1 < arr1[i]) {
-                    max3 = max2;
-                    max2 = max1;
-                    max1 = arr1[i];
-                }
-            } else if (max1 * max2 * max3 < max1 * arr1[i] * max3){
-                    max2 = arr1[i];
-                if (max2 < arr1[i]) {
-                    max3 = max2;
-                    max2 = arr1[i];
-                }
-            }
-            else if (max3 < arr1[i] || max1*max2*max3 < max1*max2*arr1[i])
-                max3 = arr1[i];
+        for (int i = 0; i < arr1.length; i++) {
+            maxHeap.add(arr1[i]);
+            minHeap.add(arr1[i]);
         }
+        int maxProduct = 1;
+        int minProduct =  1;
+        for(int i=0;i<3;i++){
+         max[i] = maxHeap.poll();
+         min[i] = minHeap.poll();
+        }
+        maxProduct = max[0]*max[1]*max[2];
+        minProduct = min[0]*min[1]*max[0];
+        return  maxProduct>minProduct?maxProduct:minProduct;
 
-        return max1*max2*max3;
-    }*/
-
-
+    }
+//works only for positive input
     private static int getMaxSumForTriplet(int[] arr1) {
         int max1 = Integer.MIN_VALUE;
         int max2 = Integer.MIN_VALUE;
