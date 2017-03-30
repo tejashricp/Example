@@ -1,4 +1,4 @@
-package com.teja.defaultinterface;
+package com.teja.java8.defaultinterface;
 
 /**
  * Created by TPathrikar on 3/30/2017.
