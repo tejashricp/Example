@@ -36,6 +36,43 @@ public class Demo {
         b1 = reverseLinkedList(b1,null);
         CustomLinkedListNode out = addNumbers(a1,b1,null,null);
         printLinkedList(out);
+        //working solution without reversing linked list
+        appendZeroForSmallerList(in1,in2,4,3);
+        CustomLinkedListNode out = addTwoNumbers(in1.head,in2.head);
+        printLinkedList(out);
+        
+    }
+    
+    private static void appendZeroForSmallerList(CustomLinkedList in1, CustomLinkedList in2, int len1, int len2) {
+        int count  = 0;
+        while(len1>len2 && count != len1-len2){
+        CustomLinkedListNode zero = new CustomLinkedListNode(0);
+        zero.next = in2.head;
+        in2.head = zero;
+        count++;
+        }
+        while(len2>len1 && count != len2-len1){
+            CustomLinkedListNode zero = new CustomLinkedListNode(0);
+            zero.next = in1.head;
+            in1.head = zero;
+            count++;
+        }
+
+    }
+
+    private static CustomLinkedListNode addTwoNumbers(CustomLinkedListNode a1, CustomLinkedListNode b1) {
+        if(a1 == null && b1 == null)
+            return null;
+        CustomLinkedListNode nextNode = addTwoNumbers(a1.next,b1.next);
+        CustomLinkedListNode node;
+        int carry = 0;
+        if(nextNode != null ) {
+            carry = (nextNode.data) / 10;
+            nextNode.data =  (nextNode.data) % 10;
+        }
+        node= new CustomLinkedListNode(a1.data+b1.data+carry);
+        node.next = nextNode;
+        return node;
     }
     private static void printLinkedList(CustomLinkedListNode linkedListNode) {
         while(linkedListNode !=null){
