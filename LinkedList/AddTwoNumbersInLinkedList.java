@@ -42,7 +42,7 @@ public class Demo {
         printLinkedList(out);
         
     }
-    
+   // approach : appending zero in front for smaller linked list 
     private static void appendZeroForSmallerList(CustomLinkedList in1, CustomLinkedList in2, int len1, int len2) {
         int count  = 0;
         while(len1>len2 && count != len1-len2){
@@ -74,6 +74,71 @@ public class Demo {
         node.next = nextNode;
         return node;
     }
+    
+    //approach end : appending zero at the front
+    
+    
+    //approach : without changing length of linked list
+    private static CustomLinkedListNode addTwoNumbers(CustomLinkedListNode a1, CustomLinkedListNode b1,int len1,int len2,int count) {
+        CustomLinkedListNode answer = null;
+        if(len1 > len2){
+            CustomLinkedListNode tempA1 = getNodeOfEqualSize(a1,len1,len2);
+            CustomLinkedListNode answerForEqualLen = getSumForEqualSize(tempA1,b1);
+            answer = addCarryToRemaingNodes(len1-len2,a1,answerForEqualLen,0);
+
+        }
+        else if(len2>len1){
+            CustomLinkedListNode tempB1 = getNodeOfEqualSize(b1,len2,len1);
+            answer = getSumForEqualSize(tempB1,b1);
+            answer = addCarryToRemaingNodes(len2-len1,b1,answer,0);
+        }
+        if(len1 == len2){
+            answer = getSumForEqualSize(a1,b1);
+        }
+        if(answer.data >= 10){
+            CustomLinkedListNode lastNode = new CustomLinkedListNode(answer.data/10);
+            answer.data = answer.data%10;
+            lastNode.next = answer;
+            answer = lastNode;
+        }
+        return answer;
+}
+
+    private static CustomLinkedListNode addCarryToRemaingNodes(int diff, CustomLinkedListNode a1, CustomLinkedListNode pervAnswer,int count) {
+        if(diff == count)
+            return null;
+        CustomLinkedListNode node = addCarryToRemaingNodes(diff,a1.next,pervAnswer,count+1);
+        int carry = 0;
+        if(node == null) {
+            carry = pervAnswer.data / 10;
+            pervAnswer.data = pervAnswer.data%10;
+        }
+        else{
+            carry = node.data/10;
+        }
+        CustomLinkedListNode result  = new CustomLinkedListNode(a1.data+carry);
+        if(node == null)
+            result.next = pervAnswer;
+        else
+            result.next = node;
+        return result;
+    }
+
+    private static CustomLinkedListNode getSumForEqualSize(CustomLinkedListNode a1, CustomLinkedListNode b1) {
+        if(a1 == null && b1 == null){
+            return null;
+        }
+        CustomLinkedListNode nextNode  = getSumForEqualSize(a1.next,b1.next);
+        int carry = 0;
+        if(nextNode!=null) {
+            carry = nextNode.data/10;
+            nextNode.data = nextNode.data%10;
+        }
+        CustomLinkedListNode node  = new CustomLinkedListNode(a1.data+b1.data+carry);
+        node.next = nextNode;
+        return node;
+    }
+    //approach end : without changing length of linked list
     private static void printLinkedList(CustomLinkedListNode linkedListNode) {
         while(linkedListNode !=null){
             System.out.print(linkedListNode.data + "->");
