@@ -42,6 +42,7 @@ public class Dev {
         }
     }
 
+    //iterative solution
     private static Node reverseLinkedList(Node node1) {
         Node prev = null;
         Node next = node1.next;
@@ -63,6 +64,24 @@ public class Dev {
 
         return prev;
     }
+    //recursive solution    
+    private static Node reverseLinkedListByRecursion(Node prev, Node node1, Node next){
+        if(prev == null && next == null)
+            return node1;
+        if(node1 == null)
+            return prev;
+        node1.next = prev;
+        Node temp2 = null;
+        if(next != null) {
+            temp2 =next.next;
+            next.next = node1;
+        }
+        prev = node1;
+        node1 = next;
+        next = temp2;
+        return reverseLinkedListByRecursion(prev,node1,next);
+    }
+
 
     public static class Node {
         int data;
