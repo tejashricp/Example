@@ -30,6 +30,7 @@ public class Test{
                     max = curr;
             }
             else {
+               if(sb.length() != 0)
                 sb = new StringBuffer("");
             }
             i++;
