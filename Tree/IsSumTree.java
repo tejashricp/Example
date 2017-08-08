@@ -67,6 +67,22 @@ public class Test1 {
         return sum(root.left)+root.data+sum(root.right);
     }
 
+ private static boolean isSumTreeApp2(TreeNode root) {
+        if(root == null || isLeaf(root))
+            return true;
+
+        int leftSum = isLeaf(root.left) && root.left != null ?root.left.data: (root.left == null ? 0 :root.left.data*2);
+        int rightSum = isLeaf(root.right) && root.right != null?root.right.data:(root.right == null ? 0 :root.right.data*2);
+        if(root.data == leftSum+rightSum && isSumTreeApp2(root.left)&& isSumTreeApp2(root.right))
+            return true;
+        return false;
+    }
+ private static boolean isLeaf(TreeNode root) {
+        if(root == null || (root.left == null && root.right == null))
+            return true;
+
+        return false;
+    }
 
     public static class TreeNode {
         int data;
