@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * Created by TPathrikar on 8/15/2017.
  */
-public class VerticalView {
+public class VerticalOrder {
     public static void main(String[] args) {
         TreeNode root =  new TreeNode(0);
         TreeNode a1 = new TreeNode(1);
@@ -48,7 +48,7 @@ public class VerticalView {
 
         //a2.left = a5;
         Map<Integer,List<Integer>> integerMap = new HashMap<>();
-        verticalView(root,integerMap,0);
+        verticalOrder(root,integerMap,0);
         for (Map.Entry<Integer, List<Integer>> integerListEntry : integerMap.entrySet()) {
             List<Integer> arr = integerListEntry.getValue();
             for (Integer integer : arr) {
@@ -58,7 +58,7 @@ public class VerticalView {
         }
     }
 
-    private static void verticalView(TreeNode root, Map<Integer, List<Integer>> integerMap, int distance) {
+    private static void verticalOrder(TreeNode root, Map<Integer, List<Integer>> integerMap, int distance) {
         if(root == null)
             return;
         if(integerMap.containsKey(distance)) {
@@ -70,8 +70,8 @@ public class VerticalView {
             integerList.add(root.data);
             integerMap.put(distance,integerList);
         }
-        verticalView(root.left,integerMap,distance+1);
-        verticalView(root.right,integerMap,distance-1);
+        verticalOrder(root.left,integerMap,distance+1);
+        verticalOrder(root.right,integerMap,distance-1);
     }
 
 
