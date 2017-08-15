@@ -1,6 +1,7 @@
 package Java8.com.teja.lambdaScopes;
 
-import com.teja.java8.functionalInterface.DummyFunctionInterface;
+
+import Java8.com.teja.functionalInterface.DummyFunctionInterface;
 
 /**
  * Created by TPathrikar on 3/30/2017.

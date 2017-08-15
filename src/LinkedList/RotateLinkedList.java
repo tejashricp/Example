@@ -1,3 +1,5 @@
+package LinkedList;
+
 /**
  * Created by TPathrikar on 8/3/2017.
  Given a singly linked list, rotate the linked list counter-clockwise by k nodes. Where k is a given positive integer.
@@ -9,7 +11,7 @@
  *
  * */
 
-public class Test1 {
+public class RotateLinkedList {
     public static void main(String[] args) {
         Node head = new Node(10);
         Node node2 = new Node(20);

@@ -9,7 +9,7 @@ import java.util.List;
  Input : 100klh564abc365bg Output : 564
  Maximum numeric value among 100, 564 and 365 is 564.
  */
-public class Test{
+public class FindMaxNumberInGivenAlphaNumericString{
 
     public static void main(String[] args) {
         String input = "100klh5640abc36513bg";

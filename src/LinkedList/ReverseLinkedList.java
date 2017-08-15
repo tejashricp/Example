@@ -1,3 +1,5 @@
+package LinkedList;
+
 /**
  * Reverse a Linked List in groups of given size
  * i/p
@@ -8,7 +10,7 @@
  *
  *
  */
-public class Dev {
+public class ReverseLinkedList {
     public static void main(String[] args) {
         Node node1 = new Node(1);
         Node node2 = new Node(2);

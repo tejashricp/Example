@@ -1,10 +1,12 @@
+package LinkedList;
+
 import java.util.HashMap;
 import java.util.HashSet;
 
 /**
  *Check if Linked list contains loop.
  */
-public class Test {
+public class CheckForCycle {
     public static void main(String[] args) {
         Node head = new Node(1);
         Node node2 = new Node(2);

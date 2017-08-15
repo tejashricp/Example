@@ -1,4 +1,4 @@
-/*
+package LinkedList;/*
 * Given a singly linked list, find middle of the linked list.
 * For example, if given linked list is 1->2->3->4->5 then output should be 3.
 * If there are even nodes, then there would be two middle nodes,
@@ -7,7 +7,7 @@
 * */
 
 
-public class Demo {
+public class MiddleNodeOfLinkedList {
     public static void main(String[] args) {
         CustomLinkedList linkedList = new CustomLinkedList();
 

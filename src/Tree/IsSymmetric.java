@@ -1,3 +1,5 @@
+package Tree;
+
 /**
  * Created by TPathrikar on 5/3/2017.
  * Check if given tree is symmetric
@@ -8,7 +10,7 @@
  *   4    3 3    4
 
  */
-public class Test {
+public class IsSymmetric {
     public static void main(String[] args) {
         TreeNode root =  new TreeNode(0);
         TreeNode a1 = new TreeNode(2);

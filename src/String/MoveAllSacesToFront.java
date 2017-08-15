@@ -1,3 +1,4 @@
+package String;
 
 /**
  Given a string that has set of words and spaces,
@@ -6,7 +7,7 @@
  this is tejashri cp
     thisistejashricp
  */
-public class Test{
+public class MoveAllSacesToFront{
 
     public static void main(String[] args) {
         String input = "this is tejashri cp";

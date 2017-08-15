@@ -1,11 +1,11 @@
-/*
+package Tree;/*
 *
 * check if given binary tree is balanced or not
 *
 * */
 
 
-public class Demo {
+public class CheckBalancedTree {
 
     public static void main(String[] args) {
         TreeNode root =  new TreeNode(0);

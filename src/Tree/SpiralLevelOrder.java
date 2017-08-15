@@ -1,3 +1,5 @@
+package Tree;
+
 import java.util.Stack;
 
 /**
@@ -5,7 +7,7 @@ import java.util.Stack;
 
 
  */
-public class Test {
+public class SpiralLevelOrder {
     public static void main(String[] args) {
         TreeNode root =  new TreeNode(0);
         TreeNode a1 = new TreeNode(1);

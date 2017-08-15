@@ -1,3 +1,5 @@
+package Misc;
+
 /**
  Suppose there is a circle. There are n petrol pumps on that circle. You are given two sets of data.
  1. The amount of petrol that every petrol pump has.
@@ -11,7 +13,7 @@
  * o/p : 1(index of petrol pump to start with)
  *
  * */
-public class Test {
+public class TraversePetrolPump {
     public static void main(String[] args) {
         int[][] petrolArr = {{6,5},
                         {4,6},

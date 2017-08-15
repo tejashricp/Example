@@ -1,6 +1,6 @@
 package designpattern.AbstractFactoryPattern.factory;
 
-import com.teja.designpattern.AbstractFactoryPattern.philips.PhilipsFactory;
+import designpattern.AbstractFactoryPattern.philips.PhilipsFactory;
 import designpattern.AbstractFactoryPattern.sony.SonyFactory;
 
 

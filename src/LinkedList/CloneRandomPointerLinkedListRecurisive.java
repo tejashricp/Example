@@ -1,3 +1,5 @@
+package LinkedList;
+
 import java.util.HashMap;
 
 /**
@@ -6,7 +8,7 @@ import java.util.HashMap;
  * pointing to some other node in the linked list.
  * You have to clone the given linked list. So*
  */
-public class Test {
+public class CloneRandomPointerLinkedListRecurisive {
     public static void main(String[] args) {
         Node node1 = new Node(1);
         Node node2 = new Node(2);

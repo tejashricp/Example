@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -6,7 +8,7 @@ Given a string of words with lots of spaces between the words , remove all the u
         input:  I   live   on     earth
         output: I live on earth
 */
-public class Test {
+public class RemoveSpaces {
     public static void main(String[] args) {
         String input="  I   live   on     earth";
         removeExtraSpaces(input);

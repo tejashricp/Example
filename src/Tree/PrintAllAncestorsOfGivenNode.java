@@ -1,3 +1,4 @@
+package Tree;
 
 import java.util.Stack;
 
@@ -18,7 +19,7 @@ import java.util.Stack;
  *
  * */
 
-public class Test1 {
+public class PrintAllAncestorsOfGivenNode {
 
     public static void main(String[] args) {
         TreeNode root =  new TreeNode(0);

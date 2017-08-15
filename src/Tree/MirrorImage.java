@@ -1,4 +1,4 @@
-/*
+package Tree;/*
 *
 * Mirror of a Tree: Mirror of a Binary 
 * Tree T is another Binary Tree M(T) with left and 
@@ -7,7 +7,7 @@
 * */
 
 
-public class Demo {
+public class MirrorImage {
 
     public static void main(String[] args) {
         TreeNode root =  new TreeNode(0);

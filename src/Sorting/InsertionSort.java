@@ -1,3 +1,5 @@
+package Sorting;
+
 /**
  * Created by TPathrikar on 8/3/2017.
  Insertion sort
@@ -6,7 +8,7 @@
  *
  * */
 
-public class Test1 {
+public class InsertionSort {
 
     public static void main(String[] args) {
         int[] inp = {3, 2, 6, 1, 4, 5};

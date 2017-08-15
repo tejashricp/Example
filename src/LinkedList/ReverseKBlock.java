@@ -1,3 +1,5 @@
+package LinkedList;
+
 /**
  * Reverse a Linked List in groups of given size
  * i/p
@@ -17,7 +19,7 @@
  * 3->2->1->6->5->4->9->8->7
  *
  */
-public class Test {
+public class ReverseKBlock {
     public static void main(String[] args) {
         Node node1 = new Node(1);
         Node node2 = new Node(2);

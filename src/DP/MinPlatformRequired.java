@@ -1,4 +1,4 @@
-/*
+package DP;/*
 * Given arrival and departure times of all trains that reach a railway station,
 * find the minimum number of platforms required
 * for the railway station so that no train waits.
@@ -7,7 +7,7 @@
 
 import java.util.Arrays;
 
-public class Demo {
+public class MinPlatformRequired {
 
     public static void main(String[] args) {
         float arr[]  = {9.00f,  9.40f, 9.50f,  11.00f, 15.00f, 18.00f};

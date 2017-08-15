@@ -1,10 +1,10 @@
-/*
+package Tree;/*
 *
 Diameter of binary tree
 * */
 
 
-public class Demo {
+public class TreeDiameter {
     public static int diameter = 0;
 
 

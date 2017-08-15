@@ -1,10 +1,10 @@
-/*
+package DP;/*
 *
 * fibonacci with recursion and w/o recursion
 * */
 
 
-public class Demo {
+public class FibonacciSeries {
 
     public static void main(String[] args) {
         int n = 9;

@@ -1,4 +1,4 @@
-/*
+package Tree;/*
 *Given a binary tree with a random pointer in every node, we have to create a 
 * duplicate of input binary tree. Below is the structure of binary tree node with random pointer.
 
@@ -17,7 +17,7 @@ to one mapping between old and corresponding new nodes.
 import java.util.HashMap;
 import java.util.Map;
 
-public class Demo {
+public class CloneABinaryTreeWithRandomPointer {
 
     public static Map<TreeNode,TreeNode> cloneTreeNodeMap = new HashMap<TreeNode, TreeNode>();
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package Tree;
+
 /**
  *Given binary tree, sum all the numbers starting from root to leaf node
  *      1
@@ -8,7 +10,7 @@
  *  sum = 124+125+136=385
 
  * */
-public class Test {
+public class SumOfRootToleafNumbers {
     public static void main(String[] args) {
         TreeNode a1 = new TreeNode(6);
         TreeNode a2 = new TreeNode(3);

@@ -1,4 +1,4 @@
-/*
+package Tree;/*
 *Given a binary tree, print the left and right view of this binary tree using two tree traversals.
 * */
 
@@ -12,7 +12,7 @@ import sun.reflect.generics.tree.Tree;
 
 import java.util.*;
 
-public class Demo {
+public class LeftAndRightView {
     public static void main(String[] args) {
         TreeNode root =  new TreeNode(1);
         TreeNode a1 = new TreeNode(2);
@@ -133,7 +133,7 @@ public class Demo {
         int data;
         TreeNode left ;
         TreeNode right;
-
+        int level;
         public TreeNode(int data) {
             this.data = data;
         }

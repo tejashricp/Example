@@ -1,4 +1,4 @@
-/*
+package LinkedList;/*
 *
 * Given a singly linked list, write a function to swap elements pairwise.
 * For example, if the linked list is 1->2->3->4->5
@@ -9,7 +9,7 @@
 * */
 
 
-public class Demo {
+public class PairwiseSwapLinkedList {
     public static void main(String[] args) {
         CustomLinkedList linkedList = new CustomLinkedList();
 

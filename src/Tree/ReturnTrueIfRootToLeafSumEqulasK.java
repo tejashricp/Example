@@ -1,11 +1,11 @@
-/*
+package Tree;/*
 *  Given a binary tree and a number,
 *  return true if the tree has a root-to-leaf path such that
 *  adding up all the values along the path equals the given number.
 * */
 
 
-public class Demo {
+public class ReturnTrueIfRootToLeafSumEqulasK {
     private static  int sum = 36;
 
     public static void main(String[] args) {

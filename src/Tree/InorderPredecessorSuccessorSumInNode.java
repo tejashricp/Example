@@ -1,3 +1,5 @@
+package Tree;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,7 +10,7 @@ import java.util.List;
  keep complete inorder raversal in an array and then calculate result for current 
  node from array roo.data = arr[i-1]+arr[i+1];
  */
-public class Test{
+public class InorderPredecessorSuccessorSumInNode{
 
     public static void main(String[] args) {
         TreeNode root =  new TreeNode(0);

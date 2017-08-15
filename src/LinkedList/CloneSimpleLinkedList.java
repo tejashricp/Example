@@ -1,10 +1,10 @@
-/*
+package LinkedList;/*
 * Clone a linked list
 *
 * and reverse a linked list
 * */
 
-public class Demo {
+public class CloneSimpleLinkedList {
     public static void main(String[] args) {
         CustomLinkedList linkedList = new CustomLinkedList();
 

@@ -1,4 +1,6 @@
-public class Demo {
+package DP;
+
+public class FindSquaresInABooleanMatrix {
 
     public static void main(String[] args) {
         int[][] input  = {  {0,1,1,0,1},

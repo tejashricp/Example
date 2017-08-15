@@ -1,4 +1,4 @@
-/*
+package String;/*
 *  1. Write a function to print the run length encoding of a given string.
 *  Example :
 *  I/P String – wwwwwxxxxddaaaww
@@ -8,7 +8,7 @@
 
 import java.io.UnsupportedEncodingException;
 
-public class Demo {
+public class RunLengthOfCharacterInString {
     public static void main(String[] args) throws UnsupportedEncodingException {
         String input = "wwwwwxxxxddaaaww";
         printRunLength(input);

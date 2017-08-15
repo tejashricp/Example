@@ -1,4 +1,4 @@
-/*
+package LinkedList;/*
 *  A linked list is given in which every node has two pointers,
 *  one to its next node and the other one, random pointer,
 *  pointing to some other node in the linked list.
@@ -9,7 +9,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class Demo {
+public class CloneRandomPointerLinkedList {
     public static void main(String[] args) {
         CustomLinkedList linkedList = new CustomLinkedList();
 

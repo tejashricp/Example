@@ -1,9 +1,11 @@
+package Tree;
+
 import java.util.Stack;
 
 /**
  * Created by TPathrikar on 8/3/2017.
  */
-public class Test1 {
+public class ConvertSpiralLevelOrderInDLL {
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(0);

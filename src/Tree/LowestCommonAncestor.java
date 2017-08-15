@@ -1,4 +1,4 @@
-/*
+package Tree;/*
 *  Given a binary tree (not a binary search tree) and two values say n1 and n2,
 *  write a program to find the least common ancestor.
 *  
@@ -27,7 +27,7 @@ import sun.reflect.generics.tree.Tree;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Demo {
+public class LowestCommonAncestor {
     public static void main(String[] args) {
         TreeNode root =  new TreeNode(1);
         TreeNode a1 = new TreeNode(2);

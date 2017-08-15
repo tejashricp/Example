@@ -1,3 +1,5 @@
+package String;
+
 import java.util.HashSet;
 
 /*
@@ -5,7 +7,7 @@ import java.util.HashSet;
 *
 * */
 
-public class Demo {
+public class TwoStringUniqueChars {
 
     public static void main(String[] args) {
         String st1 = "I am living in India";

@@ -1,7 +1,9 @@
+package DP;
+
 /*
 * LCS for input Sequences “ABCDGH” and “AEDFHR” is “ADH” of length 3.
 * */
-public class Demo {
+public class LongestCommonSubsequence {
 
     public static void main(String[] args){
         String str1 = "ABCDGHLQR";

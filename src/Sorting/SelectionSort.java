@@ -1,3 +1,5 @@
+package Sorting;
+
 /**
  * Created by TPathrikar on 8/3/2017.
  Selection sort
@@ -8,7 +10,7 @@
  *
  * */
 
-public class Test1 {
+public class SelectionSort {
 
     public static void main(String[] args) {
         int[] arr = {7, 2, 16, 1, 4, 5};

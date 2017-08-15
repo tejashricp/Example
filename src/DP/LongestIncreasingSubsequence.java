@@ -1,4 +1,4 @@
-/*
+package DP;/*
 *
 * The Longest Increasing Subsequence (LIS) problem is
 * to find the length of the longest subsequence of a given sequence such
@@ -9,7 +9,7 @@
 
 
 
-public class Demo {
+public class LongestIncreasingSubsequence {
     public static void main(String[] args) {
         int[] input = {10, 22, 9, 33, 21, 50, 41, 60, 80};
         int out = longestIncreasingSubsequence(input);

@@ -1,6 +1,7 @@
 package designpattern.AbstractFactoryPattern.sony;
 
-import com.teja.designpattern.AbstractFactoryPattern.factory.TV;
+
+import designpattern.AbstractFactoryPattern.factory.TV;
 
 /**
  * Created by TPathrikar on 7/13/2017.

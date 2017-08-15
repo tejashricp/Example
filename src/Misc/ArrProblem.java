@@ -1,3 +1,5 @@
+package Misc;
+
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -13,7 +15,7 @@ import java.util.Collections;
  1,2,2,3,4,5
 
  * */
-public class Test {
+public class ArrProblem {
     public static void main(String[] args) {
         int[] A={4,2,45,21,6,13};
         int[] B={12,3,21,0,34};

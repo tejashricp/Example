@@ -1,11 +1,11 @@
-/*
+package LinkedList;/*
 * Add two numbers represented by linked list
 * 5->6->7->9
 * 7->4->3->2
 * */
 
 
-public class Demo {
+public class AddTwoNumbersInLinkedList {
     private static  int sum = 36;
 
     public static void main(String[] args) {
@@ -103,6 +103,10 @@ public class Demo {
         }
         return answer;
 }
+
+    private static CustomLinkedListNode getNodeOfEqualSize(CustomLinkedListNode a1, int len1, int len2) {
+        return null;
+    }
 
     private static CustomLinkedListNode addCarryToRemaingNodes(int diff, CustomLinkedListNode a1, CustomLinkedListNode pervAnswer,int count) {
         if(diff == count)

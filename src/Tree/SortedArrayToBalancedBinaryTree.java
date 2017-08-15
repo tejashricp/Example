@@ -1,10 +1,12 @@
+package Tree;
+
 import java.util.HashMap;
 import java.util.HashSet;
 
 /**
  *Create Balanced binary search tree from sorted array
  */
-public class Test {
+public class SortedArrayToBalancedBinaryTree {
     public static void main(String[] args) {
         int[] arr = {4,6,32,54,57,67,80};
         Node root = createBalancedBinaryTree(arr,0,arr.length-1);
