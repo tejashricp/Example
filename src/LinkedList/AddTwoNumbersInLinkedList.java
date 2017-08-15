@@ -38,7 +38,7 @@ public class AddTwoNumbersInLinkedList {
         printLinkedList(out);
         //working solution without reversing linked list
         appendZeroForSmallerList(in1,in2,4,3);
-        CustomLinkedListNode out = addTwoNumbers(in1.head,in2.head);
+        out = addTwoNumbers(in1.head, in2.head);
         printLinkedList(out);
         
     }
