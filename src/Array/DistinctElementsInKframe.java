@@ -1,4 +1,4 @@
-/*
+package Array;/*
 * Print distinct number in every k frame of an array
 * int[] input= {11,32,43,11,23,32,23,11,56,13,11};
 * k=3
@@ -17,7 +17,7 @@
 
 import java.util.*;
 
-public class Demo {
+public class DistinctElementsInKframe {
 
     public static void main(String[] args) {
         int[] input= {11,32,43,11,23,32,23,11,56,13,11};

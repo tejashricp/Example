@@ -1,4 +1,4 @@
-/*
+package Array;/*
 *  Write a program to reverse an array
 *Input: arr[] = {6, -3, -10, 0, 2}
 * {2,0,-10,-3,6}
@@ -9,7 +9,7 @@
 * */
 
 
-public class Demo {
+public class ReverseArray {
     public static void main(String[] args) {
         int[] input = {6, -3, -10, 0,2};
         int[] input1 = {-1, -3, -10, 0, 60};

@@ -1,4 +1,4 @@
-/*
+package Array;/*
 *  Given an integer array, find a maximum product of a triplet in array.
 *  Input:  [10, 3, 5, 6, 20]
 Output: 1200
@@ -17,7 +17,7 @@ Output: 168
 
 import java.util.*;
 
-public class Demo {
+public class MaxTripletSumInArray {
     public static void main(String[] args) {
         int[] arr1 = {10, 3, 5, 6, 20};
         System.out.println(getMaxProductForTriplet1(arr1));

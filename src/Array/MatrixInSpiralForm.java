@@ -1,4 +1,4 @@
-/*
+package Array;/*
 * Given a 2D array, print it in spiral form. See the following examples.
 * Input:
         1    2   3   4
@@ -18,7 +18,7 @@ Output:
 * */
 
 
-public class Demo {
+public class MatrixInSpiralForm {
     public static void main(String[] args) {
     int[][] input  = {  {1,    2,   3,   4},
                         {5,    6,   7,   8},

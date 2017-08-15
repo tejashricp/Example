@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -17,7 +19,7 @@ import java.util.Queue;
 //improve with o(n) operation complexity and o(1) space complexity
  */
 
-public class Test {
+public class FirstNegativeInKWindowOfArray {
     public static void main(String[] args) {
         int arr[] = {-8, 2, 3, -6, 10};
         int k = 2;

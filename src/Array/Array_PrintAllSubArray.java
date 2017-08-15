@@ -1,10 +1,11 @@
-/*
+package Array;/*
 *  Print all subarrays of given array
 * */
 
 
+import java.io.UnsupportedEncodingException;
 
-public class Demo {
+public class Array_PrintAllSubArray {
     public static void main(String[] args) throws UnsupportedEncodingException {
         int input[] = {1, 2, 3, 4};
         printSubArray(input);

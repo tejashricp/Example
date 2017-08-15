@@ -1,4 +1,4 @@
-/*
+package Array;/*
 *  You are given an array of size n. Now print the number of distinct
 *  elements in the array for every frame of size k.
 * */
@@ -8,7 +8,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class Demo {
+public class Array_DIstinctElementsInKFrame {
     public static void main(String[] args) throws UnsupportedEncodingException {
         int input[] = {1, 2, 1, 3, 4, 3};
         int k =3;

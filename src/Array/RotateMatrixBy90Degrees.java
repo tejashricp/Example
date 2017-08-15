@@ -1,4 +1,4 @@
-/*
+package Array;/*
 * In- place rotation of 2D Array by 90 degree clockwise.
 * 1   2   3   4
 * 5   6   7   8
@@ -21,7 +21,7 @@
 *
 * */
 
-public class Demo {
+public class RotateMatrixBy90Degrees {
 
     public static void main(String[] args) {
         int[][] input = {   { 1,  2 ,  3 , 4 },

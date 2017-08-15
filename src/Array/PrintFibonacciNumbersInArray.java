@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -11,7 +13,7 @@ import java.util.HashSet;
  Input : arr[] = {0, 2, 8, 5, 2, 1, 4, 13, 23};
  Output : subset[] = {0, 2, 8, 5, 2, 1, 13, 23}
  */
-public class Test{
+public class PrintFibonacciNumbersInArray{
 
     public static void main(String[] args) {
         int[] arr ={1, 4, 3, 9, 10, 13, 7};
