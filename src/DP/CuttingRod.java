@@ -20,21 +20,23 @@ public class CuttingRod {
 
     public static void main(String[] args) {
         int[] arr = {1,   5,   8,   9,  10,  17,  17,  20};
-
-        int maxCost = findMaxCost(arr,arr.length);
+        int[] temp = new int[arr.length];
+        int maxCost = findMaxCost(arr,arr.length,temp);
         System.out.println(maxCost);
     }
 
-    private static int findMaxCost(int[] arr,int current) {
+    private static int findMaxCost(int[] arr,int current,int[] temp) {
         if(current<=0)
             return 0;
         int max = Integer.MIN_VALUE;
+        if(temp[current-1] != 0)
+            return temp[current-1];
         for (int i=0;i<current ; i++) {
-            int out  = arr[i]+findMaxCost(arr,current-i-1);;
+            int out  = arr[i]+findMaxCost(arr,current-i-1,temp);
             if(max<out)
                 max = out;
-
         }
+        temp[current-1] = max;
         return max;
     }
 
