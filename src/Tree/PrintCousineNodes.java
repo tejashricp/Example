@@ -49,7 +49,7 @@ public class PrintCousineNodes {
         HashSet<TreeNode> list1 = new HashSet<>();
         HashSet<TreeNode> list2 = new HashSet<>();
         list1.add(root);
-        list1 = printLevelOrder(list1,list2,a3);
+        list1 = printLevelOrder(list1,list2,a10);
         for (TreeNode treeNode : list1) {
             System.out.println(treeNode.data+" ");
         }
@@ -59,9 +59,9 @@ public class PrintCousineNodes {
         if(nodeHashSet1.isEmpty() && treeNodeHashSet2.isEmpty())
             return null;
         for (TreeNode node1:nodeHashSet1){
-                if (node1.right != null && node1.left != null && node1.left.data != node.data)
+                if (node1.right != null && (node1.left == null || (node1.left != null && node1.left.data != node.data)))
                     treeNodeHashSet2.add(node1.right);
-                if (node1.left != null && node1.right != null && node1.right.data != node.data)
+                if (node1.left != null && (node1.right == null || (node1.right != null && node1.right.data != node.data)))
                     treeNodeHashSet2.add(node1.left);
         }
         nodeHashSet1.clear();
@@ -71,9 +71,9 @@ public class PrintCousineNodes {
         }
 
         for (TreeNode node1:treeNodeHashSet2){
-                if (node1.right != null && node1.left != null && node1.left.data != node.data)
+                if (node1.right != null && (node.left == null || (node1.left != null && node1.left.data != node.data)))
                     nodeHashSet1.add(node1.right);
-                if (node1.left != null && node1.right != null && node1.right.data != node.data)
+                if (node1.left != null && (node1.right == null || (node1.right != null && node1.right.data != node.data)))
                     nodeHashSet1.add(node1.left);
         }
         treeNodeHashSet2.clear();
@@ -81,8 +81,7 @@ public class PrintCousineNodes {
             nodeHashSet1.remove(node);
             return nodeHashSet1;
         }
-        printLevelOrder(nodeHashSet1,treeNodeHashSet2,node);
-        return null;
+        return printLevelOrder(nodeHashSet1,treeNodeHashSet2,node);
     }
 
     public static class TreeNode {
