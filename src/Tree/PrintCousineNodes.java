@@ -59,9 +59,9 @@ public class PrintCousineNodes {
         if(nodeHashSet1.isEmpty() && treeNodeHashSet2.isEmpty())
             return null;
         for (TreeNode node1:nodeHashSet1){
-                if (node1.right != null && (node1.left == null || (node1.left != null && node1.left.data != node.data)))
+                if (node1.right != null && leftSiblingIsNullOrNotTargetNode(node, node1))
                     treeNodeHashSet2.add(node1.right);
-                if (node1.left != null && (node1.right == null || (node1.right != null && node1.right.data != node.data)))
+                if (node1.left != null && rightSiblingIsNullOrNotTargetNode(node, node1))
                     treeNodeHashSet2.add(node1.left);
         }
         nodeHashSet1.clear();
@@ -71,9 +71,9 @@ public class PrintCousineNodes {
         }
 
         for (TreeNode node1:treeNodeHashSet2){
-                if (node1.right != null && (node.left == null || (node1.left != null && node1.left.data != node.data)))
+                if (node1.right != null && leftSiblingIsNullOrNotTargetNode(node,node1))
                     nodeHashSet1.add(node1.right);
-                if (node1.left != null && (node1.right == null || (node1.right != null && node1.right.data != node.data)))
+                if (node1.left != null && (rightSiblingIsNullOrNotTargetNode(node, node1)))
                     nodeHashSet1.add(node1.left);
         }
         treeNodeHashSet2.clear();
@@ -82,6 +82,14 @@ public class PrintCousineNodes {
             return nodeHashSet1;
         }
         return printLevelOrder(nodeHashSet1,treeNodeHashSet2,node);
+    }
+
+    private static boolean rightSiblingIsNullOrNotTargetNode(TreeNode node, TreeNode node1) {
+        return node1.right == null || (node1.right != null && node1.right.data != node.data);
+    }
+
+    private static boolean leftSiblingIsNullOrNotTargetNode(TreeNode node, TreeNode node1) {
+        return node1.left == null || (node1.left != null && node1.left.data != node.data);
     }
 
     public static class TreeNode {
