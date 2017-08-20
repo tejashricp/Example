@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by TPathrikar on 8/20/2017.
  */
-public class PrintCousineNodes {
+public class PrintCousinNodes {
     public static void main(String[] args) {
         TreeNode root =  new TreeNode(0);
         TreeNode a1 = new TreeNode(1);
