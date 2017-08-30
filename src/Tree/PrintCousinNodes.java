@@ -1,12 +1,12 @@
 package Tree;
 
-import java.util.ArrayList;
+
 import java.util.HashSet;
-import java.util.List;
 
 /**
  * Created by TPathrikar on 8/20/2017.
  */
+
 public class PrintCousinNodes {
     public static void main(String[] args) {
         TreeNode root =  new TreeNode(0);
