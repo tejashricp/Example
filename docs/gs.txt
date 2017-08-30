@@ -1,0 +1,22 @@
+Implement a BST with the methods `put(t)`, `contains(t)` and `in_order_traversal`. Get the failing unit tests to pass.
+How to fashion a SQL query to connect the departures and arrivals of boarding passes to make one contiguous journey.
+A kid wants to travel up n steps. She can only go 1, 2 or 3 steps at a time. How many different ways can she get to the nth step?
+Write an algorithm to Reverse Linked.
+What is Object Oriented programming? What is the difference between OO and process oriented?
+Given a 8x8 chess board what is the cumulative probability that next move will fall in the chess board. The interviewer was very helpful.
+Write a sorting algorithm out by hand
+If you can race only 5 horses at a time, given 20 horses, what is the lowest number of races you need to host to determine the top 3 horses
+implementation of Hash table. what is Polymorphism.
+Given an integer, return all sequences of numbers that sum to it. (Example: 3 -&gt; (1, 2), (2, 1), (1, 1, 1)).
+Design a car class for mechanics who produce a car
+How to estimate the height of the building you are in.
+What happens if we do not have a hashcode method in an object
+I was asked to describe an efficient string searching algorithms
+Write a method to calculate the cubic root of a number to 3 decimal places.
+ How would you design instant messaging software.
+ Find depth of the binary tree?
+How would you insert an element in sorted array
+
+=======================================================================================
+Convex Hull of a set of points, in 2D plane, is a convex polygon with minimum area such that each point lies either on the boundary of polygon or inside it. Now given a set of points the task is to find the convex hull of points.
+Given a chess board of order NxM and source points (s1,s2) and destination points (d1,d2), Your task to find min number of moves required by the Knight to go to the destination cell.
