@@ -20,3 +20,8 @@ How would you insert an element in sorted array
 =======================================================================================
 Convex Hull of a set of points, in 2D plane, is a convex polygon with minimum area such that each point lies either on the boundary of polygon or inside it. Now given a set of points the task is to find the convex hull of points.
 Given a chess board of order NxM and source points (s1,s2) and destination points (d1,d2), Your task to find min number of moves required by the Knight to go to the destination cell.
+Given three integers x,y and z you need to find the sum of all the numbers formed by
+having 4 atmost x times , having 5 atmost y times and having 6 atmost z times as a digit.
+Given two rectangles, find if the given two rectangles overlap or not. A rectangle is denoted by providing the x and y co-ordinates of two points: the left top corner and the right bottom corner of the rectangle.
+Ugly numbers are numbers whose only prime factors are 2, 3 or 5. The sequence 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, … shows the first 11 ugly numbers. By convention, 1 is included. Write a program to find Nth Ugly Number.
+Stock buy sell problem
