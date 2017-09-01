@@ -24,12 +24,19 @@ Given three integers x,y and z you need to find the sum of all the numbers forme
 having 4 atmost x times , having 5 atmost y times and having 6 atmost z times as a digit.
 Given two rectangles, find if the given two rectangles overlap or not. A rectangle is denoted by providing the x and y co-ordinates of two points: the left top corner and the right bottom corner of the rectangle.
 Ugly numbers are numbers whose only prime factors are 2, 3 or 5. The sequence 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, … shows the first 11 ugly numbers. By convention, 1 is included. Write a program to find Nth Ugly Number.
-Stock buy sell problem
-Equal and hashcode contract
-inner joins
-second max salary query
-Linked hashmap implementation
-LRU cache
+Stock buy sell problem**
+Equal and hashcode contract--
+inner joins--
+second max salary query--
+Linked hashmap implementation--
+LRU cache--
 producer consumer problem
-Egg dropping problem
+Egg dropping problem--
 wave array
+sort stack by recursion
+Given a Linked List where every node represents a linked list and contains two pointers of its type:
+(i) a next pointer to the next node
+(ii) a bottom pointer to a linked list where this node is head.
+sorting algo
+balanced binary tree
+You are given a pointer/reference to a node to be deleted in a linked list. The task is to delete the node.  Pointer/reference to head node is not given.--

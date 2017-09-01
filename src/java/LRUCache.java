@@ -1,7 +1,6 @@
-package Misc;
+package java;
 
 import java.util.HashMap;
-import java.util.List;
 
 /**
  * Created by TPathrikar on 8/31/2017.
