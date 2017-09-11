@@ -27,7 +27,7 @@ public class MiddleNodeOfLinkedList {
 
         listNode4.next = listNode5;
 
-        listNode5.next = null;
+        listNode5.next = listNode6;
 
         listNode6.next = null;
         printMiddleNodeOfLinkedList(linkedList);

@@ -7,7 +7,7 @@ Given a 8x8 chess board what is the cumulative probability that next move will f
 Write a sorting algorithm out by hand
 If you can race only 5 horses at a time, given 20 horses, what is the lowest number of races you need to host to determine the top 3 horses
 implementation of Hash table. what is Polymorphism.
-Given an integer, return all sequences of numbers that sum to it. (Example: 3 -&gt; (1, 2), (2, 1), (1, 1, 1)).
+Given an integer, return all sequences of numbers that sum to it. (Example: 3 -&gt; (1, 2), (2, 1), (1, 1, 1)).--
 Design a car class for mechanics who produce a car
 How to estimate the height of the building you are in.
 What happens if we do not have a hashcode method in an object
@@ -37,6 +37,16 @@ sort stack by recursion
 Given a Linked List where every node represents a linked list and contains two pointers of its type:
 (i) a next pointer to the next node
 (ii) a bottom pointer to a linked list where this node is head.
-sorting algo
+sorting algo merge--
 balanced binary tree
 You are given a pointer/reference to a node to be deleted in a linked list. The task is to delete the node.  Pointer/reference to head node is not given.--
+Why is a binary tree better than a hash table?
+Why is a hash table better than a binary tree?
+string matching algo : kmp
+You are given a huge file with
+lot of words , spaces and line breaks. I need to separated them as an array of strings having
+fixed length size of 60, but you should not break any word
+Find the two non repeating elements in an array with other elements repeated two times(even times) exactly in linear time .
+ Normalization in DB
+ Collection : in all
+ comparable and comparator

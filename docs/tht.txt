@@ -1,0 +1,6 @@
+TDD by example:
+value object pattern
+
+
+Extreme Programming
+Continuous Integration
