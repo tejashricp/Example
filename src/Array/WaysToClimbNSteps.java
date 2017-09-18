@@ -11,20 +11,22 @@ How many different ways can she get to the nth step?
 public class WaysToClimbNSteps {
 
     public static void main(String[] args) {
-        int[] in = {3,5,10};
-        int n = 20;
+        int[] in = {1,2,3};
+        int n = 3;
 
-        System.out.println(getWaysToClimbStepsUtil(in,n,0,0,in.length-1));
+        System.out.println(getWaysToClimbStepsUtil(in,n));
     }
 
 
     public static int ways = 0;
-    private static int getWaysToClimbStepsUtil(int[] in, int n, int sum, int current, int startIndex) {
-        if(sum >= 1)
-            return n;
-        if(sum > n)
-            return 0;
-
+    private static int getWaysToClimbStepsUtil(int[] in, int n) {
+        if(n == 0)
+            return ways+1;
+        if(n <0 )
+            return ways;
+        for(int i=0;i<in.length;i++) {
+            ways = getWaysToClimbStepsUtil(in,n-in[i]);
+        }
         return ways;
     }
 }
