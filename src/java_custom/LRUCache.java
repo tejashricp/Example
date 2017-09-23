@@ -1,4 +1,4 @@
-package java;
+package java_custom;
 
 import java.util.HashMap;
 
@@ -66,5 +66,25 @@ public class LRUCache {
 
      public ListNode(int value) {
          this.value = value;
+     }
+
+     @Override
+     public boolean equals(Object o) {
+         if (this == o) return true;
+         if (o == null || getClass() != o.getClass()) return false;
+
+         ListNode listNode = (ListNode) o;
+
+         if (value != listNode.value) return false;
+         if (prev != null ? !prev.equals(listNode.prev) : listNode.prev != null) return false;
+         return next != null ? next.equals(listNode.next) : listNode.next == null;
+     }
+
+     @Override
+     public int hashCode() {
+         int result = prev != null ? prev.hashCode() : 0;
+         result = 31 * result + (next != null ? next.hashCode() : 0);
+         result = 31 * result + value;
+         return result;
      }
  }

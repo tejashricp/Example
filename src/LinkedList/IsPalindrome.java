@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.Stack;
+
 /**
  * Created by TPathrikar on 9/11/2017.
  */
@@ -18,28 +20,44 @@ public class IsPalindrome {
         c.next = d;
         d.next = e;
 
-        System.out.println(isPalindrome(head));
+        System.out.println(isPalindromeRecursive(head,head));
 
     }
 
     private static boolean isPalindrome(Node head) {
-        return recursiveUtil(head,head);
-    }
-
-    private static boolean recursiveUtil(Node left, Node right) {
-        if(right == null)
-            return true;
-        boolean isPalindrome = recursiveUtil(left,right.next);
-        if(!isPalindrome)
-            return false;
-        else if(right.next != null)
-            left = left.next;
-        isPalindrome = left.data == right.data;
-        return isPalindrome;
+    Stack<Node> stack = new Stack();
+    Node nextTonext = head;
+    while (nextTonext != null  ){
+        if(nextTonext.next == null) {
+            head = head.next;
+            break;
         }
-
-
+        stack.push(head);
+        head = head.next;
+        nextTonext = nextTonext.next.next;
     }
+    while (head != null){
+        Node temp = stack.pop();
+        if(head.data != temp.data)
+            return false;
+        head = head.next;
+    }
+    return true;
+    }
+
+    public static boolean isPalindromeRecursive(Node left , Node right){
+        if(right == null )
+            return true;
+        Node temp = left.next;
+        if(right.next == null && left.data == right.data)
+            return true;
+        else if(isPalindromeRecursive(left,right.next.next))
+            return temp.data == right.data;
+
+        return false;
+    }
+
+}
 
 
  class Node{

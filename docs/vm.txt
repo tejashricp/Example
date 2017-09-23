@@ -1,0 +1,72 @@
+1. For the same array in question 1(Any unsorted array) find maximum of a[j]-a[i] for (i<j)
+2. Given a number n , and head node of a linked list , reverse all the n-partitions.
+3.What is the worst case complexity on Quicksort and when does it occur?
+  O(n2) , when the array is already sorted.
+  What would be the remedy?
+  I told we can use merge sort as it is always O(nlogn)
+  He asked if we can randomize choosing the pivot , would that he
+4.Given a 2D maze with 0's and 1's , find if there is a path between two points..path can be only those cell's containing 1's;
+5.Left Rotate a given string 6 times(http://www.geeksforgeeks.org/block-swap-algorithm-for-array-rotation/)(I gave iterative O(nk) and Block swap O(n) approaches)
+6.Reverse a linked list in groups of given size(http://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)
+7.Definition of static keyword(http://www.geeksforgeeks.org/static-keyword-java/)
+  static vs final keywords
+8.Given an array of blue and red balls, separate them (It’s same like rearranging positive and negative numbers in an array)(http://www.geeksforgeeks.org/rearrange-positive-and-negative-numbers-publish/)
+9. Find a pair of nodes with given sum n in a binary search tree.(http://www.geeksforgeeks.org/find-a-pair-with-given-sum-in-bst/)
+10.Different traversals in a Tree.(http://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/). Which traversal gives sorted output.
+11.Find a pair of nodes with given sum n in a sorted array( I gave two approaches iterative and Hash-Based)
+12. SQL and PL/SQL meanings
+13.Asked me to detect & remove loop in a linked list.
+14. to write the expression for height of a complete binary tree.
+15.Array to BST (tried to convince me a solution which could give a skewed tree was better)
+16. Asked me about different CPU scheduling algo and made me solve a given scenario for wait time and turn around time using different scheduling algos.
+17.Asked me about gateway routers and asked me to calculate subnet mask for a given range of IPs.
+18. Given a sparse 2D matrix (containing 0s and 1s) I had to make all entries of a row and column ‘1’ which had at least one entry as ‘1’.
+19. In a binary tree find the the level with maximum number of nodes.
+20.Find intersection of 2 linked lists
+21.Delete a tree
+22.Longest common sub sequence
+23.Write code for quick sort
+24.Design/algorithmic related question on the placement/working of elevators
+25.Determine whether a given number is an Armstrong number,
+26.Generate prime numbers less than a given number ‘n’,
+27.Infix to postfix conversion.
+28.Inventory management system. class diagram and ER diagram
+29.Serialization in java
+30.transient modifier in java
+31.When do you use abstract class and when do you use interface in java
+32.Questions related to network security – SQL Injection, Client side validation and Server side validation using Javascript
+33. Cross-site scripting (XSS)
+34.Difference between inner join, left outer join and full outer join & few problem related to the same
+35.music store.
+36.Given a array of number with elements ranging from 0-9, what is the maximum number you can make given number of swaps and you can swap only adjacent numbers
+37.Explain 2NF, Functional Dependencies
+38.Given an API which consisted of three methods, create (), update (), delete () .and two users: X and Y, who can access all the three methods. Both users use the create () and delete () methods in the same way but update () is used by them in different ways. How will you implement this in OOPS?
+   (Use interface or Abstract class)
+39.What is database hierarchy? How to implement hierarchy in database tables?
+40.Question on HTTP 1.1 request and response messages.
+41.Design a stack that supports getMin() in O(1) time and O(1) extra space .
+42.Height of a tree
+43.kth largest element in an array
+44.Demand paging, Interpreter vs Compiler, Virtual memory s Real Memory, DHCP vs Static IP.
+45.Given a log file containing INFO, WARNING and DEBUG statements, separate the specific log statements into specific files (E.g., all INFO statements into the INFO file and so on) and delete the original file.
+46.Given 2 systems A and B, how would you programmatically run a script on A in B (given the IP of B and its access credentials)? (However, you’re not allowed to access B’s console)
+47.Given a configuration file having key-value pairs, write a function to accept filename, key and value as parameters and go to that particular file and either update/add the new key–value pair
+48.Reverse the elements in stack-inplace. No extra memory should be used.
+49.Write a program to Reverse a number in Java without using builtin methods.
+50.Write a program to Reverse a String in Java without using builtin methods.
+51.A puzzle. You will be given with a 3 Litre container & a 7 Litre Container. Measure exactly 5 Litres of water.
+52.Find the common elements from 3 Lists.
+53.Which protocol is used by telnet?
+54. Difference between telnet and ssh
+55.Basics about Virtualization & Hyperwisers.
+56.Explain Cloud computing in layman’s language.
+57.There are 3 kinds of balls in a big array. Red, Green, Blue color balls. Arrange them in such a way that all the red balls to the left, Green balls in the middle and Blue balls to the right of the array
+58.Similar to kadane’s algorithm
+59.Find the maximum prefix among all the strings
+60.Given k-sorted lists. How will you sort the list in to the new whole array?
+61.What if they are not sorted lists.
+62.Monty Hall Puzzle.
+63.What should be considered in REST design?
+64.Given an array of positive integers, determine if there are consecutive numbers in the array that can be summed up to a target value.
+65.Basic JAVA operations , file processing, reading , regularEx, Datatype conversions. In short things that you don't use on a day to day basis
+
