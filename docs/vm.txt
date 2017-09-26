@@ -69,4 +69,3 @@
 63.What should be considered in REST design?
 64.Given an array of positive integers, determine if there are consecutive numbers in the array that can be summed up to a target value.
 65.Basic JAVA operations , file processing, reading , regularEx, Datatype conversions. In short things that you don't use on a day to day basis
-
