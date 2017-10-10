@@ -3,7 +3,7 @@ package Tree;
 /**
  * Created by TPathrikar on 9/5/2017.
  */
-public class SearchAndInsertInBST {
+public class SearchAndInsertAndDeleteInBST {
     public static void main(String[] args) {
         Node root = new Node(8);
         Node a1 = new Node(3);
@@ -31,6 +31,11 @@ public class SearchAndInsertInBST {
         System.out.println(node.data);
         insertIntoBST(root,12,null);
         inorder(root);
+        deleteNode(root,1);
+    }
+
+    private static void deleteNode(Node root, int key) {
+
     }
 
     private static void inorder(Node root) {

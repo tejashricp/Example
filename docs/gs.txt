@@ -16,7 +16,7 @@ Write a method to calculate the cubic root of a number to 3 decimal places.
  How would you design instant messaging software.
  Find depth of the binary tree?
 How would you insert an element in sorted array
-
+garbage collection cycles
 =======================================================================================
 Convex Hull of a set of points, in 2D plane, is a convex polygon with minimum area such that each point lies either on the boundary of polygon or inside it. Now given a set of points the task is to find the convex hull of points.
 Given a chess board of order NxM and source points (s1,s2) and destination points (d1,d2), Your task to find min number of moves required by the Knight to go to the destination cell.
