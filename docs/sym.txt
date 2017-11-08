@@ -1,0 +1,49 @@
+puzzles
+//linked list:reverse,
+stack
+string:palindrome,remove duplicates in char array w/o using extra mem,all possible permutaion of string,immuatability of string
+//diff betn new String("foo") and "foo"
+java : overloading overriding
+producer consumer
+LRU
+java:serialization,synchronization,encapsulation,checked and unchecked exception,volatile keyword, difference between hashmap and hashtable
+//public, private protected default 
+//diff betn heap and stack
+dbms : joins max distinct second max,normalization,indexing
+sorting algorithm
+set nut and bolts question in geeks for geeks
+//loop in linked list 
+delete node of bst
+//search an element in rotated binary search
+fibonacci recursive and iterative
+How will you create your own linked list class if Linked List Class doesn't exist in Java?
+Write a program to remove duplicates in unsorted linked list.
+Write a program to check for the redundant parathesis in the given arithmetic expression.
+LCA of two given nodes
+
+
+
+=======================================
+how many thread a process can have
+diff betn process and thread
+how to use singleton pattern
+double locking
+implement deadlock
+Merging k list of sorted array - Priority Queue related question
+divide without using divide operator
+
+======================================
+
+2. Rules of Overloading
+In terms of constraints between overloaded methods, overloading is more relaxed than overriding, as the only requirement is to change the arguments, in combination of quantity and types. The return types, access modifiers and throws clauses can be freely declared. To summary, the overloaded methods:
+Must have different arguments list (quantity and types).
+May have different return types.
+May have different access modifiers.
+May throw different exceptions.
+Which overloaded methods to be invoked is decided at compile time, based on the actual number of arguments and the compile-time types of the arguments.
+==============================================
+http://www.codejava.net/java-core/the-java-language/12-rules-of-overriding-in-java-you-should-know#comment-4581
+======================
+1. Write a method to convert a number (range : 0 to 9 billion) to a String literal, e.g. sample input : 12345 , sample output : Twelve Thousand Three Hundred Forty Five.
+2. Merge two array lists to one without using inbuilt functions, map and set, remove all duplicates from merged list, and also print number of duplicates.
+3. Two tables were given with Foreign key relation on one table with other, and 2 scenarios were given, need to write SQL with join, aggregate operators etc between both tables and get results.

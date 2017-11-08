@@ -28,12 +28,20 @@ class Subclass extends InheritanceTest implements DummyDefInterface {
     public void getValue() {
 
     }
+    public static void testStat(){
+        System.out.println("in class inheritance test");
+    }
 
     //default methods in interface can also be implemented by non package class
     //as default is not access specifier here, but it is symbolic representation of default method
     @Override
     public void getAddress() {
 
+    }
+}
+class Extended extends Subclass{
+    public static void testStat(){
+        System.out.println("in class extended");
     }
 }
 
@@ -51,5 +59,10 @@ class MainTest{
         inheritanceTest.getJ();
         //inheritanceTest.getK();//this gives compilation error as doesnt have getk method reference in superclass
         ((Subclass)inheritanceTest).getK();//and this works fine
+        Extended extended = new Extended();
+        subclass.testStat();
+        extended.testStat();
+        subclass =extended;
+        subclass.testStat();
     }
 }
